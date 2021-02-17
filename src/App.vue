@@ -2,7 +2,11 @@
   <div id="app">
     <div id="nav">
       <router-link to="#/">Home</router-link> |
-      <router-link to="#/about">About</router-link>
+      <router-link to="#/about">About</router-link> |
+      <router-link to="#/SlotsTest">SlotsTest</router-link> |
+      <router-link to="#/Recursion">Recursion</router-link> |
+      <router-link to="#/KFormTest">KFormTest</router-link> |
+      <router-link to="#/TreeTest">TreeTest</router-link> |
     </div>
     <!-- 插座 -->
     <router-view/>
@@ -26,12 +30,12 @@
 </template>
 
 <script>
-// import HelloWorld from "./components/HelloWorld.vue";
-// import CompCommunicate from "./components/communicate";
-// import SlotsTest from "./components/slots";
-// import Recursion from "./components/recursion";
-// import KFormTest from "./components/form";
-// import TreeTest from './components/tree';
+import HelloWorld from "./components/HelloWorld.vue";
+import CompCommunicate from "./components/communicate";
+import SlotsTest from "./components/slots";
+import Recursion from "./components/recursion";
+import KFormTest from "./components/form";
+import TreeTest from './components/tree';
 
 export default {
   name: "app",
@@ -41,12 +45,12 @@ export default {
     };
   },
   components: {
-    // HelloWorld,
-    // CompCommunicate,
-    // SlotsTest,
-    // Recursion,
-    // KFormTest,
-    // TreeTest
+    HelloWorld,
+    CompCommunicate,
+    SlotsTest,
+    Recursion,
+    KFormTest,
+    TreeTest
   },
   // mounted() {
   //   console.log(this.$refs.hw.msg);

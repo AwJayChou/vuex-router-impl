@@ -46,7 +46,11 @@ function install(_Vue) {
 
     Vue.mixin({
         beforeCreate() {
+            // this为#app根组件时注册
             if (this.$options.store) {
+                console.log('before store => ', this.$options.store)
+                console.log('before options => ', this.$options)
+                console.log('before options => ', this)
                 Vue.prototype.$store = this.$options.store
             }
         }

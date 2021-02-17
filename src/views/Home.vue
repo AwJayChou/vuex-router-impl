@@ -1,10 +1,11 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
+    <h1>Home page</h1>
+    <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <div v-for="item in items" :key="item.id">
+    <!-- <div v-for="item in items" :key="item.id">
       <router-link :to="`/detail/${item.id}`">{{ item.name }}</router-link>
-    </div>
+    </div> -->
     <div><span style="color: red">count</span> {{$store.state.count}}</div>
     <button @click="add">add</button>
     <button @click="asyncAdd">asyncAdd</button>

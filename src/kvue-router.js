@@ -39,6 +39,7 @@ export default class VueRouter {
   createRouteMap() {
     this.$options.routes.forEach(item => {
       this.routeMap[item.path] = item.component;
+      console.log('router-map', this.routeMap);
     });
   }
 
@@ -54,7 +55,6 @@ export default class VueRouter {
         // 3. h(tag, data, children)
         // return <a href={this.to}>{this.$slots.default}</a>
         const vdom = h('a', {attrs: {href: this.to}}, [this.$slots.default]);
-        console.log(vdom);        
         return vdom;
       },
     });

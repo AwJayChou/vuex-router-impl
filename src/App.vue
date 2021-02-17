@@ -26,12 +26,12 @@
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-import CompCommunicate from "./components/communicate";
-import SlotsTest from "./components/slots";
-import Recursion from "./components/recursion";
-import KFormTest from "./components/form";
-import TreeTest from './components/tree';
+// import HelloWorld from "./components/HelloWorld.vue";
+// import CompCommunicate from "./components/communicate";
+// import SlotsTest from "./components/slots";
+// import Recursion from "./components/recursion";
+// import KFormTest from "./components/form";
+// import TreeTest from './components/tree';
 
 export default {
   name: "app",
@@ -41,12 +41,12 @@ export default {
     };
   },
   components: {
-    HelloWorld,
-    CompCommunicate,
-    SlotsTest,
-    Recursion,
-    KFormTest,
-    TreeTest
+    // HelloWorld,
+    // CompCommunicate,
+    // SlotsTest,
+    // Recursion,
+    // KFormTest,
+    // TreeTest
   },
   // mounted() {
   //   console.log(this.$refs.hw.msg);

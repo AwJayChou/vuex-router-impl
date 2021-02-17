@@ -5,12 +5,9 @@
     <div v-for="item in items" :key="item.id">
       <router-link :to="`/detail/${item.id}`">{{ item.name }}</router-link>
     </div>
-    <!-- <router-view></router-view> -->
-    <!-- <div>冲啊，手榴弹扔了{{$store.state.a.count}}</div> -->
-    <div>冲啊，手榴弹扔了{{$store.state.count}}</div>
-    <!-- <div>还剩{{$store.getters['a/left']}}个</div> -->
-    <button @click="add">扔一个</button>
-    <button @click="asyncAdd">蓄力扔一个</button>
+    <div><span style="color: red">count</span> {{$store.state.count}}</div>
+    <button @click="add">add</button>
+    <button @click="asyncAdd">asyncAdd</button>
   </div>
 </template>
 
@@ -22,7 +19,6 @@ export default {
   name: "home",
   data() {
     return {
-      items: [{ id: 1, name: "web全栈" }, { id: 2, name: "数据分析工程师" }]
     };
   },
   components: {

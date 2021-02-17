@@ -12,7 +12,7 @@ export default {
   data() {
     return {
       treeData: {
-        title: "Web全栈架构师",
+        title: "架构师",
         children: [
           {
             title: "Java架构师"
@@ -29,10 +29,10 @@ export default {
             ]
           },
           {
-            title: "Web全栈",
+            title: "全栈",
             children: [
               {
-                title: "Vue训练营",
+                title: "训练营",
                 expand: true,
                 children: [
                   {
